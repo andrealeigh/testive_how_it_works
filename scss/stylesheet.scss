@@ -125,7 +125,7 @@
     @include flex;
     @include flex-direction(column);
     @include flex-justify-content(center);
-    padding: 50px;
+    padding: 50px 4%;
     .hiw-what-is-testive-header {
         font-size: 24px;
         font-weight: 700;
@@ -153,7 +153,7 @@
     @include flex-justify-content(center);
     background-color: #2c3e50;
     color: #ffffff;
-    padding: 75px 50px;
+    padding: 75px 4%;
 
     .hiw-programs-features-header {
         font-size: 24px;
@@ -353,7 +353,7 @@
     @include flex-justify-content(center);
     background-color: #2C3E50;
     color: #ffffff;
-    padding: 75px 50px;
+    padding: 75px 4%;
     .hiw-ctas-testimonial {
         @include flex;
         @include flex-direction(column);
@@ -458,4 +458,70 @@
             transition: all .5s;
         }
     }
+}
+
+@media only screen and (max-width: 1195px) {
+ .hiw-programs-and-features {
+     .hiw-features-intro {
+         max-width: 290px;
+     }
+     .hiw-program-features {
+         max-width: 290px;
+     }
+ }
+
+}
+
+@media only screen and (max-width: 870px) {
+.hiw-hero {
+    .hiw-hero-blurb {
+        font-size: 38px;
+    }
+}
+.hiw-what-is-testive {
+    .hiw-what-is-testive-blurb {
+        max-width: 685px;
+    }
+}
+ .hiw-programs-and-features {
+    .hiw-programs-features-row {
+        @include flex-direction(column);
+        margin: 0 auto;
+    }
+    .hiw-features-intro {
+        max-width: 340px;
+     }
+    .hiw-program-features {
+        margin-right: 0;
+        max-width: 340px;
+     }
+     .hiw-features-list {
+         margin-bottom: 15px;
+         margin-left: 4%;
+     }
+ }
+
+}
+
+@media only screen and (max-width: 600px) {
+.hiw-hero {
+    padding: 20px 4%;
+    .hiw-hero-blurb {
+        font-size: 24px;
+        max-width: 425px;
+    }
+}
+.hiw-what-is-testive {
+    padding: 20px 4%;
+    .hiw-what-is-testive-blurb {
+        font-size: 16px;
+    }
+}
+.hiw-programs-and-features {
+    padding: 20px 4%;
+    .hiw-programs-features-header {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
 }
