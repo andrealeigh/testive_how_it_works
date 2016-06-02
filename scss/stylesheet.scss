@@ -524,4 +524,25 @@
         margin-bottom: 15px;
     }
 }
+.hiw-ctas {
+    padding: 20px 4%;
+    @include flex-direction(column);
+    .hiw-ctas-testimonial {
+        margin: 0 auto 15px auto;
+        padding-left: 3%;
+    }
+    .hiw-ctas-testimonial-blurb-bold {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .hiw-ctas-testimonial-label {
+        margin-right: 25px;
+    }
+    .hiw-ctas-header {
+        font-size: 24px;
+    }
+    .hiw-ctas-button {
+        width: 210px;
+    }
+}
 }

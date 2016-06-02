@@ -511,4 +511,23 @@
     padding: 20px 4%; }
     .hiw-programs-and-features .hiw-programs-features-header {
       font-size: 20px;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+
+  .hiw-ctas {
+    padding: 20px 4%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column; }
+    .hiw-ctas .hiw-ctas-testimonial {
+      margin: 0 auto 15px auto;
+      padding-left: 3%; }
+    .hiw-ctas .hiw-ctas-testimonial-blurb-bold {
+      font-size: 24px;
+      margin-bottom: 10px; }
+    .hiw-ctas .hiw-ctas-testimonial-label {
+      margin-right: 25px; }
+    .hiw-ctas .hiw-ctas-header {
+      font-size: 24px; }
+    .hiw-ctas .hiw-ctas-button {
+      width: 210px; } }
