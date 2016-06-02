@@ -170,6 +170,7 @@
   opacity: 0.3;
   position: absolute;
   width: 100%;
+  height: inherit;
   z-index: 1; }
 .hiw-programs-steps .hiw-programs-toggle {
   display: -ms-flexbox;
@@ -305,6 +306,7 @@
   opacity: 0.3;
   position: absolute;
   width: 100%;
+  height: inherit;
   z-index: 1; }
 .hiw-programs-steps .hiw-programs-rhythm-header {
   display: -ms-flexbox;
@@ -432,6 +434,7 @@
   .hiw-inspiration .hiw-inspiration-bg {
     opacity: 0.3;
     position: absolute;
+    height: inherit;
     width: 100%;
     z-index: 1; }
   .hiw-inspiration .hiw-inspiration-testimonial {
