@@ -540,6 +540,9 @@
   .hiw-programs-steps .hiw-programs-rhythm-header-content {
     top: 75px; }
 
+  .hiw-ctas .hiw-ctas-testimonial {
+    margin-left: 20px; }
+
   .hiw-inspiration {
     height: 200px; }
     .hiw-inspiration .hiw-inspiration-testimonial {
@@ -556,6 +559,8 @@
 
   .hiw-what-is-testive {
     padding: 20px 4%; }
+    .hiw-what-is-testive .hiw-what-is-testive-header {
+      font-size: 20px; }
     .hiw-what-is-testive .hiw-what-is-testive-blurb {
       font-size: 16px; }
 
@@ -619,12 +624,13 @@
     flex-direction: column; }
     .hiw-ctas .hiw-ctas-testimonial {
       margin: 0 auto 15px auto;
-      padding-left: 3%; }
+      padding-left: 10%;
+      padding-right: 7%; }
     .hiw-ctas .hiw-ctas-testimonial-blurb-bold {
       font-size: 24px;
       margin-bottom: 10px; }
     .hiw-ctas .hiw-ctas-testimonial-label {
-      margin-right: 25px; }
+      margin: 5px 25px 0 0; }
     .hiw-ctas .hiw-ctas-header {
       font-size: 24px; }
     .hiw-ctas .hiw-ctas-button {
@@ -636,6 +642,91 @@
       height: 175px; }
     .hiw-inspiration .hiw-inspiration-testimonial-blurb {
       font-size: 16px;
-      max-width: 480px; }
+      max-width: 370px; }
     .hiw-inspiration .hiw-inspiration-testimonial-label {
       font-size: 12px; } }
+@media only screen and (max-width: 460px) {
+  .hiw-hero .hiw-hero-blurb {
+    font-size: 16px;
+    max-width: 300px; }
+
+  .hiw-what-is-testive .hiw-what-is-testive-header {
+    font-size: 16px;
+    margin: 0 auto 15px auto;
+    max-width: 230px; }
+  .hiw-what-is-testive .hiw-what-is-testive-blurb {
+    font-size: 14px;
+    font-weight: 400; }
+
+  .hiw-programs-and-features .hiw-programs-features-header {
+    font-size: 16px; }
+  .hiw-programs-and-features .hiw-features-header {
+    font-size: 16px; }
+  .hiw-programs-and-features .hiw-features-intro {
+    font-size: 14px; }
+
+  .hiw-programs-steps .hiw-programs-start {
+    height: 300px; }
+  .hiw-programs-steps .hiw-programs-toggle-header {
+    font-size: 13px;
+    margin-bottom: 15px;
+    max-width: 300px; }
+  .hiw-programs-steps .hiw-programs-toggle {
+    height: 185px;
+    padding: 20px 0; }
+  .hiw-programs-steps .hiw-toggle {
+    font-size: 14px;
+    padding: 5px; }
+  .hiw-programs-steps .hiw-programs-start-header-image {
+    margin-right: 5px;
+    top: 232px;
+    width: 25px; }
+  .hiw-programs-steps .hiw-programs-start-header-content {
+    font-size: 16px;
+    font-weight: 700;
+    top: 250px; }
+  .hiw-programs-steps .hiw-programs-content-header {
+    font-size: 16px;
+    margin: 0 auto 10px auto;
+    max-width: 250px;
+    text-align: center; }
+  .hiw-programs-steps .hiw-programs-content-list-item {
+    font-size: 12px; }
+  .hiw-programs-steps .hiw-list-item-bold {
+    font-size: 16px; }
+  .hiw-programs-steps .hiw-programs-rhythm {
+    height: 115px; }
+  .hiw-programs-steps .hiw-programs-rhythm-header-image {
+    top: 32px;
+    margin-right: 5px;
+    width: 25px; }
+  .hiw-programs-steps .hiw-programs-rhythm-header-content {
+    font-size: 16px;
+    font-weight: 700;
+    top: 50px; }
+
+  .hiw-ctas .hiw-ctas-quotation {
+    font-size: 32px;
+    left: -18px; }
+  .hiw-ctas .hiw-ctas-testimonial-blurb-bold {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .hiw-ctas .hiw-ctas-testimonial-blurb {
+    font-size: 14px;
+    margin-bottom: 5px; }
+  .hiw-ctas .hiw-ctas-header {
+    font-size: 20px; }
+  .hiw-ctas .hiw-ctas-button {
+    font-size: 14px;
+    padding: 5px;
+    width: 180px; }
+
+  .hiw-inspiration {
+    height: 115px; }
+    .hiw-inspiration .hiw-inspiration-testimonial {
+      height: 115px; }
+    .hiw-inspiration .hiw-inspiration-testimonial-blurb {
+      font-size: 12px;
+      max-width: 260px; }
+    .hiw-inspiration .hiw-inspiration-testimonial-label {
+      max-width: 215px; } }
