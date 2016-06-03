@@ -3,10 +3,223 @@
 <html>
 
 <head>
-
+    <title>How it Works</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 
-<body>
+<body class="hiw-body coaching-selected">
+    <script type="text/javascript">
+        function changeSelection(event) {
+            $(".hiw-toggle-selected").removeClass("hiw-toggle-selected");
+            $(event.target).addClass("hiw-toggle-selected");
+            var target = $("body")
+            if (event.target.textContent === "Advisor") {
+                target.removeClass("coaching-selected");
+                target.removeClass("coaching-plus-selected");
+                target.addClass("advisor-selected");
+            }
+            else if (event.target.textContent === "Coaching") {
+                target.removeClass("advisor-selected");
+                target.removeClass("coaching-plus-selected");
+                target.addClass("coaching-selected");
+            }
+            else if (event.target.textContent === "Coaching Plus") {
+                target.removeClass("advisor-selected");
+                target.removeClass("coaching-selected");
+                target.addClass("coaching-plus-selected");
+            }
+        }
+    </script>
+
+    <section class="hiw-hero">
+        <h1 class="hiw-hero-blurb">Don&rsquo;t waste time. Testive will show you <span class="hiw-hero-blurb-blue">the smart way to prep.</span></h1>
+    </section>
+
+    <section class="hiw-what-is-testive">
+        <h2 class="hiw-what-is-testive-header">Testive prepares students for the SAT &amp; ACT.</h2>
+        <div class="hiw-john-video-wrapper"></div>
+        <h3 class="hiw-what-is-testive-blurb">By leveraging MIT-developed technology, expert coaching and flexible online delivery, Testive empowers students to reach their full potential.</h3>
+    </section>
+
+    <section class="hiw-programs-and-features">
+        <h2 class="hiw-programs-features-header">Testive Programs: <span class="hiw-features-emphasis">Features &amp; Benefits</span></h2>
+        <div class="hiw-programs-features-row">
+            <div class="hiw-program-features">
+                <h4 class="hiw-features-header">ADVISOR</h4>
+                <p class="hiw-features-intro">Affordable online prep providing personalized curriculum and weekly video lessons.</p>
+                <ul class="hiw-features-list">
+                    <li class="hiw-features-list-items">Weekly video lessons</li>
+                    <li class="hiw-features-list-items">Weekly personalized lesson plans</li>
+                    <li class="hiw-features-list-items">Parent portal access</li>
+                </ul>
+            </div>
+            <div class="hiw-program-features">
+                <h4 class="hiw-features-header">COACHING</h4>
+                <p class="hiw-features-intro">Personalized online prep with the guidance and support of an expert private coach.</p>
+                <ul class="hiw-features-list">
+                    <li class="hiw-features-list-items">Weekly virtual meetings with private coach</li>
+                    <li class="hiw-features-list-items">Daily practice monitoring by coach</li>
+                    <li class="hiw-features-list-items">Weekly video lessons</li>
+                    <li class="hiw-features-list-items">Weekly personalized lesson plans</li>
+                    <li class="hiw-features-list-items">Parent portal access</li>
+                </ul>
+
+
+            </div>
+            <div class="hiw-program-features">
+                <h4 class="hiw-features-header">COACHING PLUS</h4>
+                <p class="hiw-features-intro">Personalized online prep with the guidance and intensive support of an expert private coach.</p>
+                <ul class="hiw-features-list">
+                    <li class="hiw-features-list-items">Twice Weekly virtual meetings with private coach</li>
+                    <li class="hiw-features-list-items">Daily practice monitoring by coach</li>
+                    <li class="hiw-features-list-items">Weekly video lessons</li>
+                    <li class="hiw-features-list-items">Weekly personalized lesson plans</li>
+                    <li class="hiw-features-list-items">Parent portal access</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="hiw-programs-steps">
+        <div class="hiw-programs-start">
+            <img class="hiw-programs-start-bg" src="images/start-bg.jpg" alt="Marathon Start Line" />
+            <div class="hiw-programs-toggle">
+                <h2 class="hiw-programs-toggle-header">Want to make the most of your Testive experience? Pick a program to find out how it works:</h2>
+                <div class="hiw-toggle-row">
+                    <span class="hiw-toggle" alt="Advisor Program" onclick="changeSelection(event)">Advisor</span>
+                    <span class="hiw-toggle hiw-toggle-selected" alt="Coaching Program" onclick="changeSelection(event)">Coaching</span>
+                    <span class="hiw-toggle" alt="Coaching Plus Program" onclick="changeSelection(event)">Coaching Plus</span>
+                </div>
+            </div>
+            <div class="hiw-programs-start-header">
+                <img class="hiw-programs-start-header-image" src="images/one-circle.svg" />
+                <h2 class="hiw-programs-start-header-content">Start out on the right foot.</h2>
+            </div>
+        </div>
+        <div class="hiw-programs-content hiw-programs-coaching">
+            <h2 class="hiw-programs-content-header">Once you&rsquo;ve signed up for a <span class="hiw-programs-content-header-emphasis">coaching program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Take a practice test to get a baseline score.</span> Your results provide valuable information on your current performance level, allowing your coach to tailor all of your assignments to you.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Set goals and make a plan.</span> You and your coach will use the Kick-off Call to set goals and make a plan. This will take place online from the convenience of your own home.</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-content hiw-programs-coaching-plus">
+            <h2 class="hiw-programs-content-header">Once you&rsquo;ve signed up for a <span class="hiw-programs-content-header-emphasis">coaching plus program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Take a practice test to get a baseline score.</span> Your results provide valuable information on your current performance level, allowing your coach to tailor all of your assignments to you.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Set goals and make a plan.</span> You and your coach will use the Kick-off Call to set goals and make a plan. This will take place online from the convenience of your own home.</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-content hiw-programs-advisor">
+            <h2 class="hiw-programs-content-header">Once you&rsquo;ve signed up for an <span class="hiw-programs-content-header-emphasis">advisor program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Take a practice test to get a baseline score.</span> The results provide valuable information to the advisor team on your current performance level.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Unlock your first assignment.</span> Once your test is complete, Testive will create a custom assignment based on your results ensuring productive work from the start!</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-rhythm">
+            <img class="hiw-programs-rhythm-bg" src="images/rhythm-bg.jpg"  alt="Marathon Runner" />
+            <div class="hiw-programs-rhythm-header">
+                <img class="hiw-programs-rhythm-header-image" src="images/two-circle.svg" />
+                <h2 class="hiw-programs-rhythm-header-content">Get into a rhythm.</h2>
+            </div>
+        </div>
+        <div class="hiw-programs-content hiw-programs-coaching">
+            <h2 class="hiw-programs-content-header">During your <span class="hiw-programs-content-header-emphasis">coaching program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Receive targeted weekly assignments.</span> By completing your work in 30-minute practice sessions spread over 4-5 days, you will build a successful prep habit.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Review and reflect on your work.</span> Throughout the week, you will pause to watch video explanations and write reflective notes allowing you to learn from mistakes faster.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Meet weekly with your coach for extra support.</span> These online video chats give you and your coach an opportunity to troubleshoot issues and adjust your lesson plans so you are always working on the right areas.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Get constant feedback.</span> Using text and email, your coach keeps you focused and accountable. Parents monitor work with 24/7 online access and receive a weekly progress email so that everyone stays in the loop.</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-content hiw-programs-coaching-plus">
+            <h2 class="hiw-programs-content-header">During your <span class="hiw-programs-content-header-emphasis">coaching plus program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Complete your weekly assignments.</span> By spreading your work in 30-minute practice sessions over 4-5 days, you will build a successful prep habit.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Review and reflect on your work.</span> Throughout the week, you will pause to watch video explanations and write reflective notes allowing you to learn from mistakes faster.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Meet twice weekly with your coach for intensive support.</span> These frequent online video chats give you and your coach an opportunity to troubleshoot issues and adjust your lesson plans so you are always working on the right areas.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Get constant feedback.</span> Using text and email, your coach keeps you focused and accountable. Parents monitor work with 24/7 online access and receive a weekly progress email so that everyone stays in the loop.</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-content hiw-programs-advisor">
+            <h2 class="hiw-programs-content-header">During your <span class="hiw-programs-content-header-emphasis">advisor program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Practice daily with targeted assignments.</span> By spreading your work in 30-minute sessions over 4-5 days and pausing to review and reflect on it, you&rsquo;ll build a successful prep habit and learn faster.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Complete weekly problem sets and unlock video lessons.</span> Our team of expert coaches will release weekly lessons covering critical test prep topics.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Stay on track.</span> Students can track their work online; parents can monitor student progress with 24/7 access to their own online portal.</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-rhythm">
+            <img class="hiw-programs-rhythm-bg" src="images/finish-bg.jpg"  alt="Marathon Runner" />
+            <div class="hiw-programs-rhythm-header">
+                <img class="hiw-programs-rhythm-header-image" src="images/three-circle.svg" />
+                <h2 class="hiw-programs-rhythm-header-content">Cross the finish line!</h2>
+            </div>
+        </div>
+        <div class="hiw-programs-content hiw-programs-coaching">
+            <h2 class="hiw-programs-content-header">Once you&rsquo;ve completed your <span class="hiw-programs-content-header-emphasis">coaching program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Be in great shape for the test.</span> All your training will have you at your peak by test day so you can enter the room with full confidence.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Have options.</span> With a great score in hand, you&rsquo;ll put yourself in the running for admission to schools of your choice. You may even receive valuable financial aid.</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-content hiw-programs-coaching-plus">
+            <h2 class="hiw-programs-content-header">Once you&rsquo;ve completed your <span class="hiw-programs-content-header-emphasis">coaching plus program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Be in great shape for the test.</span> All your training will have you at your peak by test day so you can enter the room with full confidence.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Have options.</span> With a great score in hand, you&rsquo;ll put yourself in the running for admission to schools of your choice. You may even receive valuable financial aid.</li>
+            </ul>
+        </div>
+        <div class="hiw-programs-content hiw-programs-advisor">
+            <h2 class="hiw-programs-content-header">Once you&rsquo;ve completed your <span class="hiw-programs-content-header-emphasis">advisor program,</span> you will...</h2>
+            <ul class="hiw-programs-content-list">
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Be in good shape for the test.</span> All your training will have you at your peak by test day so you can enter the room with full confidence.</li>
+                <li class="hiw-programs-content-list-item"><span class="hiw-list-item-bold">Perform your best.</span> With a great score in hand, you&rsquo;ll put yourself in the running for admission to schools of your choice.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="hiw-ctas">
+        <div class="hiw-ctas-testimonial">
+            <div class="hiw-ctas-quotation-and-bold-blurb">
+                <div class="hiw-ctas-quotation">&ldquo;</div>
+                <h2 class="hiw-ctas-testimonial-blurb-bold">The whole Testive concept and experience is truly 21st century.</h2>
+            </div>
+            <h3 class="hiw-ctas-testimonial-blurb">Measurable progress allows for steady, positive morale and momentum. Price-for-value truly exceptional. I fail to see why someone would pay for tutors when something like this exists. &rdquo;</h3>
+            <h5 class="hiw-ctas-testimonial-label">&mdash; Maria Z. (Parent)</h5>
+        </div>
+        <div class="hiw-ctas-options hiw-programs-coaching">
+            <h2 class="hiw-ctas-header">Ready to Get Started?</h2>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">Schedule a Call</a>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">Plans &amp; Pricing</a>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">See Our Results</a>
+        </div>
+        <div class="hiw-ctas-options hiw-programs-coaching-plus">
+            <h2 class="hiw-ctas-header">Ready to Get Started?</h2>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">Schedule a Call</a>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">Plans &amp; Pricing</a>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">See Our Results</a>
+        </div>
+        <div class="hiw-ctas-options hiw-programs-advisor">
+            <h2 class="hiw-ctas-header">Ready to Get Started?</h2>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">Chat Online Now</a>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">Plans &amp; Pricing</a>
+            <a class="hiw-ctas-button" href="#" alt="Contact Us">See Our Results</a>
+        </div>
+    </section>
+
+    <section class="hiw-inspiration">
+        <img class="hiw-inspiration-bg" src="images/success-bg.jpg" alt="Trophies Background" />
+        <div class="hiw-inspiration-testimonial">
+            <h2 class="hiw-inspiration-testimonial-blurb">&ldquo; Motivation remains key to the marathon: The motivation to begin; The motivation to continue; The motivation never to quit. &rdquo;</h2>
+            <a class="hiw-inspiration-testimonial-label" href="https://en.wikipedia.org/wiki/Hal_Higdon" rel="Hal Higdon">Hal Higdon, runner and writer for Runer's World Magazine</a>
+        </div>
+    </section>
 
 </body>
 
